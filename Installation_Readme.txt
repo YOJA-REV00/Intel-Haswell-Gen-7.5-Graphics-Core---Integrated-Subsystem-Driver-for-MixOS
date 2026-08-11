@@ -1,8 +1,7 @@
 ﻿Release Version: Alpha Release (By MixOS Dev.)
-Intel(R) Graphics Driver: 20.19.15.5186 EOL
-Intel(R) Display Audio Driver: 6.16.00.3208
-Intel(R) Display Audio Driver: 8.20.00.950
-Build Date: Aug 9, 2026
+Intel(R) Graphics Driver: 20.19.15.5195
+Intel(R) Display Audio Driver: 11.2.0.10
+Build Date: Aug 11, 2026
 
 Platform / Operating System(s): 
 
