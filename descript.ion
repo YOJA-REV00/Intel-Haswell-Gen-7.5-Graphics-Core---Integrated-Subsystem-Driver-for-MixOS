@@ -1,0 +1,4 @@
+﻿
+Intel(R)-Win-64_15.40.5186.exe Title="MixOS Intel HD 4600"
+BeginPrompt="¿Deseas instalar el controlador Intel 4TH. gen v5186?"
+ExecuteFile="instalar.bat"
