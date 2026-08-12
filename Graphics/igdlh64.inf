@@ -24,7 +24,7 @@ Provider=%Intel%
 ClassGUID={4D36E968-E325-11CE-BFC1-08002BE10318}
 Class=Display
 CatalogFile=igdlh.cat
-DriverVer = 08/11/2026, 20.19.15.5201
+DriverVer = 08/12/2026, 20.19.15.5203
 ;
 ; Package Info for Co-Installer
 ;
@@ -119,67 +119,7 @@ MSDK_w8.copy 	= 16422, Intel\Media SDK   ; Program Files
 ;
 [Manufacturer]
 
-%Intel%   = IntelGfx, NTamd64.6.1, NTamd64.6.2, NTamd64.6.3, NTamd64.10.0, NTamd64.10.0...26100
-
-;=====================================================================
-;    Windows 7 Install - DT Only
-;=====================================================================
-[IntelGfx.NTamd64.6.1]
-; BDW HW
-%iBDWULTGT1%	= iBDWM_w7, PCI\VEN_8086&DEV_1606
-%iBDWULXGT1%	= iBDWM_w7, PCI\VEN_8086&DEV_160E
-%iBDWULTGT2%	= iBDWM_w7, PCI\VEN_8086&DEV_1616
-%iBDWULTGT3%	= iBDWM_w7, PCI\VEN_8086&DEV_1626
-%iBDWULXGT2%	= iBDWM_w7, PCI\VEN_8086&DEV_161E
-%iBDWHALOGT2%	 = iBDWM_w7, PCI\VEN_8086&DEV_1612
-%iBDWGT2SRVR% 	 = iBDWM_w7, PCI\VEN_8086&DEV_161A
-%iBDWHALOGT3%	 = iBDWM_w7, PCI\VEN_8086&DEV_1622
-%iBDWGT3SRVR% 	 = iBDWM_w7, PCI\VEN_8086&DEV_162A
-%iBDWULTGT328W%  = iBDWM_w7, PCI\VEN_8086&DEV_162B
-; BSW HW
-%iCHVGM1%    	= iCHVM_w7, PCI\VEN_8086&DEV_22B1
-
-;=====================================================================
-;    Windows 8 Install - DT Only
-;=====================================================================
-[IntelGfx.NTamd64.6.2]
-; BDW HW
-%iBDWULTGT1%	= iBDWM_w8, PCI\VEN_8086&DEV_1606
-%iBDWULXGT1%	= iBDWM_w8, PCI\VEN_8086&DEV_160E
-%iBDWULTGT2%	= iBDWM_w8, PCI\VEN_8086&DEV_1616
-%iBDWULTGT3%	= iBDWM_w8, PCI\VEN_8086&DEV_1626
-%iBDWULXGT2%	= iBDWM_w8, PCI\VEN_8086&DEV_161E
-%iBDWHALOGT2%	 = iBDWM_w8, PCI\VEN_8086&DEV_1612
-%iBDWGT2SRVR% 	 = iBDWM_w8, PCI\VEN_8086&DEV_161A
-%iBDWHALOGT3%  	 = iBDWM_w8, PCI\VEN_8086&DEV_1622
-%iBDWGT3SRVR% 	 = iBDWM_w8, PCI\VEN_8086&DEV_162A
-%iBDWULTGT328W%  = iBDWM_w8, PCI\VEN_8086&DEV_162B
-; CHV HW
-%iCHVGM0%    	= iCHVM_w8, PCI\VEN_8086&DEV_22B0
-; BSW HW
-%iCHVGM1%    	= iCHVM_w8, PCI\VEN_8086&DEV_22B1
-
-;=====================================================================
-;    Windows 8.1 Install - DT Only
-;=====================================================================
-[IntelGfx.NTamd64.6.3]
-; BDW HW
-%iBDWULTGT1%	= iBDWM_w81, PCI\VEN_8086&DEV_1606
-%iBDWULXGT1%	= iBDWM_w81, PCI\VEN_8086&DEV_160E
-%iBDWULTGT2%	= iBDWM_w81, PCI\VEN_8086&DEV_1616
-%iBDWULTGT3%	= iBDWM_w81, PCI\VEN_8086&DEV_1626
-%iBDWULXGT2%	= iBDWM_w81, PCI\VEN_8086&DEV_161E
-%iBDWHALOGT2%  	= iBDWM_w81, PCI\VEN_8086&DEV_1612
-%iBDWGT2SRVR% 	 = iBDWM_w81, PCI\VEN_8086&DEV_161A
-%iBDWHALOGT3%  	 = iBDWM_w81, PCI\VEN_8086&DEV_1622
-%iBDWGT3SRVR% 	 = iBDWM_w81, PCI\VEN_8086&DEV_162A
-%iBDWULTGT328W%  = iBDWM_w81, PCI\VEN_8086&DEV_162B
-; CHV HW
-%iCHVGM0%    	= iCHVM_w81, PCI\VEN_8086&DEV_22B0
-; BSW HW
-%iCHVGM1%    	= iCHVM_w81, PCI\VEN_8086&DEV_22B1
-
-; Included for standard DT builds
+%Intel%   = IntelGfx, NTamd64.10.0 , NTamd64.22000...26100, NTamd64.26200
 
 ;=====================================================================
 ;    Windows Threshold Install - DT + Mobile
@@ -220,7 +160,10 @@ MSDK_w8.copy 	= 16422, Intel\Media SDK   ; Program Files
 ; BSW HW
 %iCHVGM1%    	= iCHVM_w10, PCI\VEN_8086&DEV_22B1
 
-[IntelGfx.NTamd64.10.0...26100]
+;=====================================================================
+;    Windows 11 22H2 ... 24H2 Install - DT + Mobile
+;=====================================================================
+[IntelGfx.NTamd64.22000...26100]
 ; HSW Classic
 %iHSWGT1D%   	= iHSWD_w10, PCI\VEN_8086&DEV_0402
 %iHSWGT1M%    	= iHSWM_w10, PCI\VEN_8086&DEV_0406
@@ -256,501 +199,52 @@ MSDK_w8.copy 	= 16422, Intel\Media SDK   ; Program Files
 ; BSW HW
 %iCHVGM1%    	= iCHVM_w10, PCI\VEN_8086&DEV_22B1
 
-
-; Include w7/w8/w81 sections for standard DT builds
 ;=====================================================================
-;  Windows 7 Device Sections - DT Only
+;    Windows 11 25H2 Install - DT + Mobile
 ;=====================================================================
-[iBDWM_w7]
-FeatureScore=E6
-CopyFiles=igfx.Miniport, igfx.UserMode,  igfx.UMWow , Opm.Copy , Pavp.Copy , Installer.Copy , CUI.Copy , CUISDK.Copy32 , OpenGL_Gen8.Copy , OpenGL_Gen8.Copy32  , OpenCL_Cpu_Root.Copy , OpenCL_Cpu_System.Copy32 , OpenCL_Cpu_Bin_x86.Copy32 , OpenCL_Cpu_Bin_Tbb.Copy32 , OpenCL_Cpu_Common.Copy , OpenCL_Cpu_System.Copy64 , OpenCL_Cpu_Bin_x64.Copy64 , OpenCL_Cpu_Bin_Tbb.Copy64 , OpenCL_Gpu.Copy32 , OpenCL_Gpu.Copy64  , OpenGL_EGL.Copy32, OpenGL_ES1.Copy32, OpenGL_ES2.Copy32 , MSDK_w7.copy
-AddReg =  igfx_SoftwareDX11Settings
-AddReg =  igfx_SoftwareCommonSettings
-DelReg =   igfx_RemoveDeviceSettings
+[IntelGfx.NTamd64.26200]
+; HSW Classic
+%iHSWGT1D%   	= iHSWD_w10, PCI\VEN_8086&DEV_0402
+%iHSWGT1M%    	= iHSWM_w10, PCI\VEN_8086&DEV_0406
+%iHSWGT2D%   	= iHSWD_w10, PCI\VEN_8086&DEV_0412
+%iHSWGT2M%    	= iHSWM_w10, PCI\VEN_8086&DEV_0416
+%iHSWGT15D%    	= iHSWD_w10, PCI\VEN_8086&DEV_041E
+; HSW ULT
+%iHSWGT1UT%    	= iHSWM_w10, PCI\VEN_8086&DEV_0A06
+%iHSWGT2UT%    	= iHSWM_w10, PCI\VEN_8086&DEV_0A16
+%iHSWGT3UT%    	= iHSWM_w10, PCI\VEN_8086&DEV_0A26
+%iHSWGT3UT28W%  = iHSWM_w10, PCI\VEN_8086&DEV_0A2E
+%iHSWGT2UX%  	= iHSWM_w10, PCI\VEN_8086&DEV_0A1E
+%iHSWGT1ULX%  	= iHSWM_w10, PCI\VEN_8086&DEV_0A0E
+; HSW CRW
+%iHSWGT3CW%    	= iHSWM_w10, PCI\VEN_8086&DEV_0D26
+%iHSWGT3CWDT%   = iHSWD_w10, PCI\VEN_8086&DEV_0D22
+; HSW Server
+%iHSWSVGT1%   	= iHSWD_w10, PCI\VEN_8086&DEV_040A
+%iHSWSVGT2%    	= iHSWD_w10, PCI\VEN_8086&DEV_041A
+; BDW HW
+%iBDWULTGT1%	= iBDWM_w10, PCI\VEN_8086&DEV_1606
+%iBDWULXGT1%	= iBDWM_w10, PCI\VEN_8086&DEV_160E
+%iBDWULTGT2%	= iBDWM_w10, PCI\VEN_8086&DEV_1616
+%iBDWULTGT3%	= iBDWM_w10, PCI\VEN_8086&DEV_1626
+%iBDWULXGT2%	= iBDWM_w10, PCI\VEN_8086&DEV_161E
+%iBDWHALOGT2%  	= iBDWM_w10, PCI\VEN_8086&DEV_1612
+%iBDWGT2SRVR% 	 = iBDWM_w10, PCI\VEN_8086&DEV_161A
+%iBDWHALOGT3%  	 = iBDWM_w10, PCI\VEN_8086&DEV_1622
+%iBDWGT3SRVR% 	 = iBDWM_w10, PCI\VEN_8086&DEV_162A
+%iBDWULTGT328W%  = iBDWM_w10, PCI\VEN_8086&DEV_162B
+; CHV HW
+%iCHVGM0%    	= iCHVM_w10, PCI\VEN_8086&DEV_22B0
+; BSW HW
+%iCHVGM1%    	= iCHVM_w10, PCI\VEN_8086&DEV_22B1
 
-AddReg = CUI.AddReg
-AddReg = CUISDK.AddReg
-
-DelReg  = CUI.DelReg
-DelReg  = CUISDK.DelReg
-
-AddReg = OpenGL_Gen8.AddReg
-AddReg  = OpenGL.Installed
-
-AddReg = OpenCL.AddReg
-
-DelReg = OpenCL.DelReg
-
-AddReg = Common_AddSwSettings
-DelReg  = Common_DelSwSettings
-AddReg = Common_Mobile_AddSwSettings
-DelReg  = Common_Mobile_DelSwSettings
-
-DelReg  = Common_Device_Specific_DelSwSettings		; Delete device specific regkeys
-AddReg =  PwrCons_BDW_AddSwSettings
-AddReg =  AlternateScramblerSupport_BDW_AddSwSettings
-AddReg   = XVYCCFeature_AddSwSettings
-DelReg    = XVYCCFeature_DelSwSettings
-AddReg =  DisplayDPP_BDW_AddSwSettings
-DelReg =   DisplayDPP_BDW_DelSwSettings
-AddReg =  DisplayOptimization_BDW_AddSwSettings
-DelReg  =  DisplayOptimization_DelSwSettings
-AddReg =  AllowDeepCStates_BDW_AddSwSettings
-DelReg  =  AllowDeepCStates_BDW_DelSwSettings
-AddReg =  MBOOUI_BDW_AddSwSettings
-DelReg  =  MBOOUI_BDW_DelSwSettings
-AddReg =  igfx_SLT_NB_AddSwSettings
-DelReg  =  igfx_SLT_NB_DelSwSettings
-AddReg = MBO_BDW_Enable_AddSwSettings
-DelReg = MBO_BDW_Disable_DelSwSettings
-AddReg = HG_BDW_AddSwSettings
-DelReg = HG_BDW_DelSwSettings
-AddReg  =  AUDIOWOVIDEOSupport_Enable_AddSwSettings
-DelReg  =  AUDIOWOVIDEOSupport_DelSwSettings
-
-AddReg = MSDK_4_0_AddSwSettings32
-DelReg  = MSDK_4_0_DelSwSettings32
-AddReg = MSDK_4_0_AddSwSettings64
-DelReg  = MSDK_4_0_DelSwSettings64
-AddReg = MSDK_Win7_MFT_Enable
-DelReg  = MSDK_Win7_MFT_Disable
-RegisterDLLs = MSDK_w7_RegisterDLLs
-
-AddPowerSetting = PowerPlanSettings
-AddReg = TiledDisplay_AddSwSettings
-DelReg = TiledDisplay_DelSwSettings
-AddReg = PrunedSADInHyperVEnabled_AddSwSettings
-DelReg = PrunedSADInHyperVEnabled_DelSwSettings
-[iBDWM_w7.HW]
-AddReg = igfx_MSI_HardwareDeviceSettings
-
-[iBDWM_w7.CoInstallers]
-AddReg = CoInst.AddReg
-CopyFiles = CoInst.CopyFiles
-
-[iBDWM_w7.GeneralConfigData]
-MaximumNumberOfDevices = 2
-MaximumDeviceMemoryConfiguration = 512
-
-[iBDWM_w7.Services]
-AddService = igfx, 0x00000002, igfx_Service_Inst
-AddService = cphs,, CP_HECI_Service_Inst
-
-AddService = igfxCUIService2.0.0.0,0x00000800, CUI_Service_Inst
-
-;=====================================================================
-;
-[iCHVM_w7]
-FeatureScore=E6
-CopyFiles=igfx.MiniportLP, igfx.UserMode,  igfx.UMWow  , OpmLP.Copy , Pavp.Copy , Installer.Copy , CUI.Copy , CUISDK.Copy32 , OpenGL_Gen8.Copy , OpenGL_Gen8.Copy32  , OpenCL_Cpu_Root.Copy , OpenCL_Cpu_System.Copy32 , OpenCL_Cpu_Bin_x86.Copy32 , OpenCL_Cpu_Bin_Tbb.Copy32 , OpenCL_Cpu_Common.Copy , OpenCL_Cpu_System.Copy64 , OpenCL_Cpu_Bin_x64.Copy64 , OpenCL_Cpu_Bin_Tbb.Copy64 , OpenCL_Gpu.Copy32 , OpenCL_Gpu.Copy64  , OpenGL_EGL.Copy32, OpenGL_ES1.Copy32, OpenGL_ES2.Copy32 , MSDK_w7.copy
-AddReg =  igfx_SoftwareDX11Settings
-AddReg =  igfx_SoftwareCommonSettings
-DelReg =   igfx_RemoveDeviceSettings
-
-AddReg = CUI.AddReg
-AddReg = CUISDK.AddReg
-
-DelReg  = CUI.DelReg
-DelReg  = CUISDK.DelReg
-
-AddReg = OpenGL_Gen8.AddReg
-AddReg  = OpenGL.Installed
-
-AddReg = OpenCL.AddReg
-
-DelReg = OpenCL.DelReg
-
-AddReg =  Common_AddSwSettings
-DelReg  =  Common_DelSwSettings
-AddReg =  Common_Mobile_AddSwSettings
-DelReg  =  Common_Mobile_DelSwSettings
-DelReg  =  Common_Device_Specific_DelSwSettings		; Delete device specific regkeys
-DelReg =   PwrCons_UserPolicy_DelSwSettings
-AddReg =  PwrCons_CHV_AddSwSettings
-AddReg	 = AsyncFlips_CHV_AddSwSettings
-DelReg     = AsyncFlips_CHV_DelSwSettings
-AddReg =  AlternateScramblerSupport_CHV_AddSwSettings
-AddReg =  DisplayDPP_CHV_AddSwSettings
-DelReg  =  DisplayDPP_CHV_DelSwSettings
-AddReg =  DisplayOptimization_CHV_AddSwSettings
-DelReg =   DisplayOptimization_DelSwSettings
-AddReg =  AllowDeepCStates_CHV_AddSwSettings
-DelReg =  AllowDeepCStates_CHV_DelSwSettings
-AddReg =  EnableDetachableEDPSupport_CHV_AddSwSettings
-DelReg  =  EnableDetachableEDPSupport_DelSwSettings
-AddReg = AudioLPE_WA_CHV_AddSwSettings
-DelReg = AudioLPE_WA_CHV_DelSwSettings
-AddReg = ScalerToExternalDisplay_CHV_AddSwSettings
-DelReg = ScalerToExternalDisplay_CHV_DelSwSettings
-AddReg = Display_Feature_AddSwSettings
-DelReg  = Display_Feature_DelSwSettings
-AddReg  =  AUDIOWOVIDEOSupport_Enable_AddSwSettings
-DelReg  =  AUDIOWOVIDEOSupport_DelSwSettings
-AddReg = ENABLEDITHERING6BPC_CHV_AddSwSettings
-DelReg = ENABLEDITHERING6BPC_CHV_DelSwSettings
-
-AddReg = MSDK_4_0_AddSwSettings32
-DelReg  = MSDK_4_0_DelSwSettings32
-AddReg = MSDK_4_0_AddSwSettings64
-DelReg  = MSDK_4_0_DelSwSettings64
-AddReg = MSDK_Win7_MFT_Enable
-DelReg  = MSDK_Win7_MFT_Disable
-RegisterDLLs = MSDK_w7_RegisterDLLs
-
-AddPowerSetting = PowerPlanSettings
-
-[iCHVM_w7.HW]
-AddReg = igfx_MSI_HardwareDeviceSettings
-
-[iCHVM_w7.CoInstallers]
-AddReg = CoInst.AddReg
-CopyFiles = CoInst.CopyFiles
-
-[iCHVM_w7.GeneralConfigData]
-MaximumNumberOfDevices = 2
-MaximumDeviceMemoryConfiguration = 512
-
-[iCHVM_w7.Services]
-AddService = igfxLP, 0x00000002, igfx_Service_Inst_LP
-AddService = cphs,, CP_HECI_Service_Inst
-
-AddService = igfxCUIService2.0.0.0,0x00000800, CUI_Service_Inst
-
-;=====================================================================
-
-;=====================================================================
-;  Windows 8 Device Sections - DT Only
-;=====================================================================
-[iBDWM_w8]
-FeatureScore=E0
-CopyFiles=igfx.Miniport, igfx.UserMode,  igfx.UMWow , Opm.Copy , Pavp.Copy , Installer.Copy , CUI.Copy , CUISDK.Copy32 , OpenGL_Gen8.Copy , OpenGL_Gen8.Copy32  , OpenCL_Cpu_Root.Copy , OpenCL_Cpu_System.Copy32 , OpenCL_Cpu_Bin_x86.Copy32 , OpenCL_Cpu_Bin_Tbb.Copy32 , OpenCL_Cpu_Common.Copy , OpenCL_Cpu_System.Copy64 , OpenCL_Cpu_Bin_x64.Copy64 , OpenCL_Cpu_Bin_Tbb.Copy64 , OpenCL_Gpu.Copy32 , OpenCL_Gpu.Copy64  , OpenGL_EGL.Copy32, OpenGL_ES1.Copy32, OpenGL_ES2.Copy32 , MSDK_w8.copy 
-AddReg =  igfx_SoftwareDX11Settings
-AddReg =  igfx_SoftwareCommonSettings
-DelReg =   igfx_RemoveDeviceSettings
-
-AddReg = CUI.AddReg
-AddReg = CUISDK.AddReg
-
-DelReg  = CUI.DelReg
-DelReg  = CUISDK.DelReg
-
-AddReg = OpenGL_Gen8.AddReg
-AddReg  = OpenGL.Installed
-
-AddReg = OpenCL.AddReg
-
-DelReg = OpenCL.DelReg
-
-AddReg = Common_AddSwSettings
-DelReg  = Common_DelSwSettings
-AddReg = Common_Mobile_AddSwSettings
-DelReg  = Common_Mobile_DelSwSettings
-DelReg  = Common_Device_Specific_DelSwSettings		; Delete device specific regkeys
-AddReg = PwrCons_BDW_AddSwSettings
-AddReg = AlternateScramblerSupport_BDW_AddSwSettings
-AddReg   = XVYCCFeature_AddSwSettings
-DelReg    = XVYCCFeature_DelSwSettings
-AddReg = DisplayDPP_BDW_AddSwSettings
-DelReg =  DisplayDPP_BDW_DelSwSettings
-AddReg = DisplayOptimization_BDW_AddSwSettings
-DelReg  = DisplayOptimization_DelSwSettings
-AddReg = AllowDeepCStates_BDW_AddSwSettings
-DelReg  = AllowDeepCStates_BDW_DelSwSettings
-AddReg = MBOOUI_BDW_AddSwSettings
-DelReg  = MBOOUI_BDW_DelSwSettings
-AddReg = igfx_SLT_NB_AddSwSettings
-DelReg  = igfx_SLT_NB_DelSwSettings
-AddReg = EnableDetachableEDPSupport_BDW_AddSwSettings
-DelReg  = EnableDetachableEDPSupport_DelSwSettings
-AddReg = MBO_BDW_Enable_AddSwSettings
-DelReg = MBO_BDW_Disable_DelSwSettings
-AddReg = HG_BDW_AddSwSettings
-DelReg = HG_BDW_DelSwSettings
-AddReg  =  AUDIOWOVIDEOSupport_Enable_AddSwSettings
-DelReg  =  AUDIOWOVIDEOSupport_DelSwSettings
-
-AddReg = MSDK_4_0_AddSwSettings32
-DelReg  = MSDK_4_0_DelSwSettings32
-AddReg = MSDK_4_0_AddSwSettings64
-DelReg  = MSDK_4_0_DelSwSettings64
-AddReg = MSDK_Win8_MFT_Enable
-DelReg  = MSDK_Win8_MFT_Disable
-RegisterDLLs = MSDK_w8_RegisterDLLs
-
-AddPowerSetting = PowerPlanSettings
-AddReg = TiledDisplay_AddSwSettings
-DelReg = TiledDisplay_DelSwSettings
-AddReg = PrunedSADInHyperVEnabled_AddSwSettings
-DelReg = PrunedSADInHyperVEnabled_DelSwSettings
-[iBDWM_w8.HW]
-AddReg = igfx_MSI_HardwareDeviceSettings
-
-[iBDWM_w8.CoInstallers]
-AddReg = CoInst.AddReg
-CopyFiles = CoInst.CopyFiles
-
-[iBDWM_w8.GeneralConfigData]
-MaximumNumberOfDevices = 2
-MaximumDeviceMemoryConfiguration = 512
-
-[iBDWM_w8.Services]
-AddService = igfx, 0x00000002, igfx_Service_Inst
-AddService = cphs,, CP_HECI_Service_Inst
-
-AddService = igfxCUIService2.0.0.0,0x00000800, CUI_Service_Inst
-
-;=====================================================================
-[iCHVM_w8]
-FeatureScore=E0
-CopyFiles=igfx.MiniportLP, igfx.UserMode,  igfx.UMWow  , OpmLP.Copy , Pavp.Copy , Installer.Copy , CUI.Copy , CUISDK.Copy32 , OpenGL_Gen8.Copy , OpenGL_Gen8.Copy32 , OpenGL_EGL.Copy32, OpenGL_ES1.Copy32, OpenGL_ES2.Copy32 , OpenCL_Cpu_Root.Copy , OpenCL_Cpu_System.Copy32 , OpenCL_Cpu_Bin_x86.Copy32 , OpenCL_Cpu_Bin_Tbb.Copy32 , OpenCL_Cpu_Common.Copy , OpenCL_Cpu_System.Copy64 , OpenCL_Cpu_Bin_x64.Copy64 , OpenCL_Cpu_Bin_Tbb.Copy64 , OpenCL_Gpu.Copy32 , OpenCL_Gpu.Copy64  , OpenGL_EGL.Copy32, OpenGL_ES1.Copy32, OpenGL_ES2.Copy32 , MSDK_w8.copy 
-AddReg =  igfx_SoftwareDX11Settings
-AddReg =  igfx_SoftwareCommonSettings
-DelReg =   igfx_RemoveDeviceSettings
-
-AddReg = CUI.AddReg
-AddReg = CUISDK.AddReg
-
-DelReg  = CUI.DelReg
-DelReg  = CUISDK.DelReg
-
-AddReg = OpenGL_Gen8.AddReg
-AddReg  = OpenGL.Installed
-
-AddReg = OpenCL.AddReg
-
-DelReg = OpenCL.DelReg
-
-AddReg = Common_AddSwSettings
-DelReg  = Common_DelSwSettings
-AddReg = Common_Mobile_AddSwSettings
-DelReg  = Common_Mobile_DelSwSettings
-DelReg  = Common_Device_Specific_DelSwSettings		; Delete device specific regkeys
-DelReg  = PwrCons_UserPolicy_DelSwSettings
-AddReg = PwrCons_CHV_AddSwSettings
-AddReg = AsyncFlips_CHV_AddSwSettings
-DelReg  = AsyncFlips_CHV_DelSwSettings
-AddReg = AlternateScramblerSupport_CHV_AddSwSettings
-AddReg = DisplayDPP_CHV_AddSwSettings
-DelReg =  DisplayDPP_CHV_DelSwSettings
-AddReg = DisplayOptimization_CHV_AddSwSettings
-DelReg  = DisplayOptimization_DelSwSettings
-AddReg =  AllowDeepCStates_CHV_AddSwSettings
-DelReg =  AllowDeepCStates_CHV_DelSwSettings
-AddReg = EnableDetachableEDPSupport_CHV_AddSwSettings
-DelReg  = EnableDetachableEDPSupport_DelSwSettings
-AddReg = AudioLPE_WA_CHV_AddSwSettings
-DelReg  = AudioLPE_WA_CHV_DelSwSettings
-AddReg = ScalerToExternalDisplay_CHV_AddSwSettings
-DelReg = ScalerToExternalDisplay_CHV_DelSwSettings
-AddReg = Display_Feature_CHV_AddSwSettings_Default
-DelReg  = Display_Feature_CHV_DelSwSettings_Default
-AddReg  =  AUDIOWOVIDEOSupport_Enable_AddSwSettings
-DelReg  =  AUDIOWOVIDEOSupport_DelSwSettings
-AddReg = ENABLEDITHERING6BPC_CHV_AddSwSettings
-DelReg = ENABLEDITHERING6BPC_CHV_DelSwSettings
-
-AddReg = MSDK_4_0_AddSwSettings32
-DelReg  = MSDK_4_0_DelSwSettings32
-AddReg = MSDK_4_0_AddSwSettings64
-DelReg  = MSDK_4_0_DelSwSettings64
-AddReg = MSDK_Win8_MFT_Enable
-DelReg  = MSDK_Win8_MFT_Disable
-RegisterDLLs = MSDK_w8_RegisterDLLs
-
-AddPowerSetting = PowerPlanSettings
-
-[iCHVM_w8.HW]
-AddReg = igfx_MSI_HardwareDeviceSettings
-
-[iCHVM_w8.CoInstallers]
-AddReg = CoInst.AddReg
-CopyFiles = CoInst.CopyFiles
-
-[iCHVM_w8.GeneralConfigData]
-MaximumNumberOfDevices = 2
-MaximumDeviceMemoryConfiguration = 512
-
-[iCHVM_w8.Services]
-AddService = igfxLP, 0x00000002, igfx_Service_Inst_LP
-AddService = cphs,, CP_HECI_Service_Inst
-
-AddService = igfxCUIService2.0.0.0,0x00000800, CUI_Service_Inst
-
-;=====================================================================
-
-;=====================================================================
-;  Windows 8.1 Device Sections - DT Only
-;=====================================================================
-[iBDWM_w81]
-FeatureScore=DA
-CopyFiles=igfx.Miniport, igfx.UserMode,  igfx.UMWow , Opm.Copy , Pavp.Copy , Installer.Copy , CUI.Copy , CUISDK.Copy32 , OpenGL_Gen8.Copy , OpenGL_Gen8.Copy32  , OpenCL_Cpu_Root.Copy , OpenCL_Cpu_System.Copy32 , OpenCL_Cpu_Bin_x86.Copy32 , OpenCL_Cpu_Bin_Tbb.Copy32 , OpenCL_Cpu_Common.Copy , OpenCL_Cpu_System.Copy64 , OpenCL_Cpu_Bin_x64.Copy64 , OpenCL_Cpu_Bin_Tbb.Copy64 , OpenCL_Gpu.Copy32 , OpenCL_Gpu.Copy64  , OpenGL_EGL.Copy32, OpenGL_ES1.Copy32, OpenGL_ES2.Copy32 , MSDK_w8.copy , Miracast.Copy
-AddReg =  igfx_SoftwareDX11Settings
-AddReg =  igfx_SoftwareCommonSettings
-DelReg =   igfx_RemoveDeviceSettings
-
-AddReg = CUI.AddReg
-AddReg = CUISDK.AddReg
-
-DelReg  = CUI.DelReg
-DelReg  = CUISDK.DelReg
-
-AddReg = OpenGL_Gen8.AddReg
-AddReg  = OpenGL.Installed
-
-AddReg = OpenCL.AddReg
-
-DelReg = OpenCL.DelReg
-
-AddReg = Common_AddSwSettings
-DelReg  = Common_DelSwSettings
-AddReg = Common_Mobile_AddSwSettings
-DelReg  = Common_Mobile_DelSwSettings
-DelReg  = Common_Device_Specific_DelSwSettings		; Delete device specific regkeys
-AddReg =  PwrCons_BDW_AddSwSettings
-AddReg =  AlternateScramblerSupport_BDW_AddSwSettings
-AddReg   = XVYCCFeature_AddSwSettings
-DelReg    = XVYCCFeature_DelSwSettings
-AddReg =  DisplayDPP_BDW_AddSwSettings
-DelReg =   DisplayDPP_BDW_DelSwSettings
-AddReg =  DisplayOptimization_BDW_AddSwSettings
-DelReg  =  DisplayOptimization_DelSwSettings
-AddReg =  AllowDeepCStates_BDW_AddSwSettings
-DelReg  =  AllowDeepCStates_BDW_DelSwSettings
-AddReg =  MBOOUI_BDW_AddSwSettings
-DelReg  = MBOOUI_BDW_DelSwSettings
-AddReg =  igfx_SLT_NB_AddSwSettings
-DelReg  =  igfx_SLT_NB_DelSwSettings
-AddReg = EnableDetachableEDPSupport_BDW_AddSwSettings
-DelReg  = EnableDetachableEDPSupport_DelSwSettings
-AddReg = MBO_BDW_Enable_AddSwSettings
-DelReg = MBO_BDW_Disable_DelSwSettings
-AddReg = HG_BDW_AddSwSettings
-DelReg = HG_BDW_DelSwSettings
-AddReg  =  AUDIOWOVIDEOSupport_Enable_AddSwSettings
-DelReg  =  AUDIOWOVIDEOSupport_DelSwSettings
-
-AddReg = igfx_MC_AddSwSettings
-DelReg  = igfx_MC_DelSwSettings
-
-AddReg = MSDK_4_0_AddSwSettings32
-DelReg  = MSDK_4_0_DelSwSettings32
-AddReg = MSDK_4_0_AddSwSettings64
-DelReg  = MSDK_4_0_DelSwSettings64
-AddReg = MSDK_Win8_MFT_Enable
-DelReg  = MSDK_Win8_MFT_Disable
-RegisterDLLs = MSDK_w8_RegisterDLLs
-
-AddPowerSetting = PowerPlanSettings
-AddReg = TiledDisplay_AddSwSettings
-DelReg = TiledDisplay_DelSwSettings
-AddReg = PrunedSADInHyperVEnabled_AddSwSettings
-DelReg = PrunedSADInHyperVEnabled_DelSwSettings
-[iBDWM_w81.HW]
-AddReg = igfx_MSI_HardwareDeviceSettings
-
-[iBDWM_w81.CoInstallers]
-AddReg = CoInst.AddReg
-CopyFiles = CoInst.CopyFiles
-
-[iBDWM_w81.GeneralConfigData]
-MaximumNumberOfDevices = 2
-MaximumDeviceMemoryConfiguration = 512
-
-[iBDWM_w81.Services]
-AddService = igfx, 0x00000002, igfx_Service_Inst
-AddService = cphs,, CP_HECI_Service_Inst
-
-AddService = igfxCUIService2.0.0.0,0x00000800, CUI_Service_Inst
-
-;=====================================================================
-[iCHVM_w81]
-FeatureScore=DA
-CopyFiles=igfx.MiniportLP, igfx.UserMode,  igfx.UMWow  , OpmLP.Copy , Pavp.Copy , Installer.Copy , CUI.Copy , CUISDK.Copy32 , OpenGL_Gen8.Copy , OpenGL_Gen8.Copy32  , OpenCL_Cpu_Root.Copy , OpenCL_Cpu_System.Copy32 , OpenCL_Cpu_Bin_x86.Copy32 , OpenCL_Cpu_Bin_Tbb.Copy32 , OpenCL_Cpu_Common.Copy , OpenCL_Cpu_System.Copy64 , OpenCL_Cpu_Bin_x64.Copy64 , OpenCL_Cpu_Bin_Tbb.Copy64 , OpenCL_Gpu.Copy32 , OpenCL_Gpu.Copy64  , OpenGL_EGL.Copy32, OpenGL_ES1.Copy32, OpenGL_ES2.Copy32 , MSDK_w8.copy , Miracast.Copy
-AddReg =  igfx_SoftwareDX11Settings
-AddReg =  igfx_SoftwareCommonSettings
-DelReg =   igfx_RemoveDeviceSettings
-
-AddReg = CUI.AddReg
-AddReg = CUISDK.AddReg
-
-DelReg  = CUI.DelReg
-DelReg  = CUISDK.DelReg
-
-AddReg = OpenGL_Gen8.AddReg
-AddReg  = OpenGL.Installed
-
-AddReg = OpenCL.AddReg
-
-DelReg = OpenCL.DelReg
-
-AddReg = Common_AddSwSettings
-DelReg  = Common_DelSwSettings
-AddReg = Common_Mobile_AddSwSettings
-DelReg  = Common_Mobile_DelSwSettings
-DelReg  = Common_Device_Specific_DelSwSettings		; Delete device specific regkeys
-DelReg  = PwrCons_UserPolicy_DelSwSettings
-AddReg = PwrCons_CHV_AddSwSettings
-AddReg = AsyncFlips_CHV_AddSwSettings
-DelReg  = AsyncFlips_CHV_DelSwSettings
-AddReg = AlternateScramblerSupport_CHV_AddSwSettings
-AddReg = DisplayDPP_CHV_AddSwSettings
-DelReg =  DisplayDPP_CHV_DelSwSettings
-AddReg = DisplayOptimization_CHV_AddSwSettings
-DelReg  = DisplayOptimization_DelSwSettings
-AddReg =  AllowDeepCStates_CHV_AddSwSettings
-DelReg =  AllowDeepCStates_CHV_DelSwSettings
-AddReg = EnableDetachableEDPSupport_CHV_AddSwSettings
-DelReg  = EnableDetachableEDPSupport_DelSwSettings
-AddReg = AudioLPE_WA_CHV_AddSwSettings
-DelReg  = AudioLPE_WA_CHV_DelSwSettings
-AddReg = ScalerToExternalDisplay_CHV_AddSwSettings
-DelReg = ScalerToExternalDisplay_CHV_DelSwSettings
-AddReg = Display_Feature_CHV_AddSwSettings_Default
-DelReg  = Display_Feature_CHV_DelSwSettings_Default
-AddReg  =  AUDIOWOVIDEOSupport_Enable_AddSwSettings
-DelReg  =  AUDIOWOVIDEOSupport_DelSwSettings
-AddReg = ENABLEDITHERING6BPC_CHV_AddSwSettings
-DelReg = ENABLEDITHERING6BPC_CHV_DelSwSettings
-
-AddReg = igfx_MC_AddSwSettings
-DelReg  = igfx_MC_DelSwSettings
-
-AddReg = MSDK_4_0_AddSwSettings32
-DelReg  = MSDK_4_0_DelSwSettings32
-AddReg = MSDK_4_0_AddSwSettings64
-DelReg  = MSDK_4_0_DelSwSettings64
-AddReg = MSDK_Win8_MFT_Enable
-DelReg  = MSDK_Win8_MFT_Disable
-RegisterDLLs = MSDK_w8_RegisterDLLs
-
-AddPowerSetting = PowerPlanSettings
-
-[iCHVM_w81.HW]
-AddReg = igfx_MSI_HardwareDeviceSettings
-
-[iCHVM_w81.CoInstallers]
-AddReg = CoInst.AddReg
-CopyFiles = CoInst.CopyFiles
-
-[iCHVM_w81.GeneralConfigData]
-MaximumNumberOfDevices = 2
-MaximumDeviceMemoryConfiguration = 512
-
-[iCHVM_w81.Services]
-AddService = igfxLP, 0x00000002, igfx_Service_Inst_LP
-AddService = cphs,, CP_HECI_Service_Inst
-
-AddService = igfxCUIService2.0.0.0,0x00000800, CUI_Service_Inst
-
-;=====================================================================
-; Included for standard desktop builds
 
 ;=====================================================================
 ;  Windows Threshold Device Sections - DT + Mobile
 ;=====================================================================
 [iHSWM_w10]
 CopyINF = DisplayAudio\11.2\IntcDAud.inf
-FeatureScore=D1
+FeatureScore = 00
 CopyFiles=igfx.Miniport, igfx.UserMode,  igfx.UMWow , Opm.Copy , Pavp.Copy , Installer.Copy , CUI.Copy , CUISDK.Copy32 , OpenGL_Gen75.Copy , OpenGL_Gen75.Copy32  , OpenCL_Cpu_Root.Copy , OpenCL_Cpu_System.Copy32 , OpenCL_Cpu_Bin_x86.Copy32 , OpenCL_Cpu_Bin_Tbb.Copy32 , OpenCL_Cpu_Common.Copy , OpenCL_Cpu_System.Copy64 , OpenCL_Cpu_Bin_x64.Copy64 , OpenCL_Cpu_Bin_Tbb.Copy64 , OpenCL_Gpu.Copy32 , OpenCL_Gpu.Copy64  , OpenGL_EGL.Copy32, OpenGL_ES1.Copy32, OpenGL_ES2.Copy32 , MSDK_w8.copy
 AddReg =igfx_SoftwareDX12Settings
 AddReg = igfx_Win10Settings
@@ -833,7 +327,7 @@ AddService = igfxCUIService2.0.0.0,0x00000800, CUI_Service_Inst
 ;=====================================================================
 [iHSWD_w10]
 CopyINF = DisplayAudio\11.2\IntcDAud.inf
-FeatureScore=D1
+FeatureScore = 00
 CopyFiles=igfx.Miniport, igfx.UserMode,  igfx.UMWow , Opm.Copy , Pavp.Copy , Installer.Copy , CUI.Copy , CUISDK.Copy32 , OpenGL_Gen75.Copy , OpenGL_Gen75.Copy32  , OpenCL_Cpu_Root.Copy , OpenCL_Cpu_System.Copy32 , OpenCL_Cpu_Bin_x86.Copy32 , OpenCL_Cpu_Bin_Tbb.Copy32 , OpenCL_Cpu_Common.Copy , OpenCL_Cpu_System.Copy64 , OpenCL_Cpu_Bin_x64.Copy64 , OpenCL_Cpu_Bin_Tbb.Copy64 , OpenCL_Gpu.Copy32 , OpenCL_Gpu.Copy64  , OpenGL_EGL.Copy32, OpenGL_ES1.Copy32, OpenGL_ES2.Copy32 , MSDK_w8.copy
 AddReg = igfx_SoftwareDX12Settings
 AddReg =  igfx_Win10Settings
@@ -912,7 +406,7 @@ AddService = igfxCUIService2.0.0.0,0x00000800, CUI_Service_Inst
 
 ;=====================================================================
 [iBDWM_w10]
-FeatureScore=D1
+FeatureScore = 00
 CopyFiles=igfx.Miniport, igfx.UserMode,  igfx.UMWow , Opm.Copy , Pavp.Copy , Installer.Copy , CUI.Copy , CUISDK.Copy32 , OpenGL_Gen8.Copy , OpenGL_Gen8.Copy32  , OpenCL_Cpu_Root.Copy , OpenCL_Cpu_System.Copy32 , OpenCL_Cpu_Bin_x86.Copy32 , OpenCL_Cpu_Bin_Tbb.Copy32 , OpenCL_Cpu_Common.Copy , OpenCL_Cpu_System.Copy64 , OpenCL_Cpu_Bin_x64.Copy64 , OpenCL_Cpu_Bin_Tbb.Copy64 , OpenCL_Gpu.Copy32 , OpenCL_Gpu.Copy64  , OpenGL_EGL.Copy32, OpenGL_ES1.Copy32, OpenGL_ES2.Copy32 , MSDK_w8.copy
 AddReg = igfx_SoftwareDX12Settings
 AddReg =  igfx_Win10Settings
@@ -1000,7 +494,7 @@ AddService = igfxCUIService2.0.0.0,0x00000800, CUI_Service_Inst
 
 ;=====================================================================
 [iCHVM_w10]
-FeatureScore=D1
+FeatureScore = 00
 CopyFiles=igfx.MiniportLP, igfx.UserMode,  igfx.UMWow  , OpmLP.Copy , Pavp.Copy , Installer.Copy , CUI.Copy , CUISDK.Copy32 , OpenGL_Gen8.Copy , OpenGL_Gen8.Copy32 , OpenGL_EGL.Copy32, OpenGL_ES1.Copy32, OpenGL_ES2.Copy32 , OpenCL_Cpu_Root.Copy , OpenCL_Cpu_System.Copy32 , OpenCL_Cpu_Bin_x86.Copy32 , OpenCL_Cpu_Bin_Tbb.Copy32 , OpenCL_Cpu_Common.Copy , OpenCL_Cpu_System.Copy64 , OpenCL_Cpu_Bin_x64.Copy64 , OpenCL_Cpu_Bin_Tbb.Copy64 , OpenCL_Gpu.Copy32 , OpenCL_Gpu.Copy64  , OpenGL_EGL.Copy32, OpenGL_ES1.Copy32, OpenGL_ES2.Copy32 , MSDK_w8.copy
 AddReg = igfx_SoftwareDX12Settings
 AddReg =  igfx_Win10Settings
