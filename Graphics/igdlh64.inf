@@ -24,7 +24,7 @@ Provider=%Intel%
 ClassGUID={4D36E968-E325-11CE-BFC1-08002BE10318}
 Class=Display
 CatalogFile=igdlh.cat
-DriverVer = 08/12/2026, 20.19.15.5203
+DriverVer = 08/26/2026, 20.19.15.5206
 ;
 ; Package Info for Co-Installer
 ;
