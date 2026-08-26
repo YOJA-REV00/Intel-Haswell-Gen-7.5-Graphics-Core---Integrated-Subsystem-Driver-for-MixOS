@@ -26,7 +26,7 @@ LR64=IfExists("%source%"\LR\x64\LanternRock.msi) AND NOT IsCmd(s)
 operation=copyonly
 mode=overwrite
 source=%setup%
-destination=%installDir%\uninstall\igxpin.exe
+;destination=%installDir%\uninstall\igxpin.exe
 sequence=100
 
 [Folder]
@@ -66,12 +66,12 @@ sequence=115
 [Uninstall]
 name={F0E3AD40-2BBD-4360-9C76-B9AC9A5886EA}
 display=%product%
-display_mui=@%installDir%\Uninstall\igxpin.exe,-1166
-command="%installDir%\Uninstall\igxpin.exe" -uninstall
+;display_mui=@%installDir%\Uninstall\igxpin.exe,-1166
+;command="%installDir%\Uninstall\igxpin.exe" -uninstall
 location=%installDir%
 estimatedsize=76000
 publisher=Intel Corporation
-icon=%installDir%\Uninstall\igxpin.exe,0
+;icon=%installDir%\Uninstall\igxpin.exe,0
 modify=no
 repair=no
 version=%GFXVer%
