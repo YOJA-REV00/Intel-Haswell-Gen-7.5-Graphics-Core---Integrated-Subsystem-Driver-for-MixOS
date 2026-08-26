@@ -1,4 +1,4 @@
-; Action list for 15.42+ GFX
+﻿; Action list for 15.42+ GFX
 
 [Variables]
 product=Intel(R) Processor Graphics
@@ -26,7 +26,7 @@ LR64=IfExists("%source%"\LR\x64\LanternRock.msi) AND NOT IsCmd(s)
 operation=copyonly
 mode=overwrite
 source=%setup%
-;destination=%installDir%\uninstall\igxpin.exe
+destination=%installDir%\uninstall\igxpin.exe
 sequence=100
 
 [Folder]
@@ -63,15 +63,15 @@ condition=Is64
 error=ignore
 sequence=115
 
-;[Uninstall]
+[Uninstall]
 name={F0E3AD40-2BBD-4360-9C76-B9AC9A5886EA}
 display=%product%
-;;display_mui=@%installDir%\Uninstall\igxpin.exe,-1166
-;;command="%installDir%\Uninstall\igxpin.exe" -uninstall
-;location=%installDir%
-;estimatedsize=76000
+display_mui=@%installDir%\Uninstall\igxpin.exe,-1166
+command="%installDir%\Uninstall\igxpin.exe" -uninstall
+location=%installDir%
+estimatedsize=76000
 publisher=Intel Corporation
-;;icon=%installDir%\Uninstall\igxpin.exe,0
+icon=%installDir%\Uninstall\igxpin.exe,0
 modify=no
 repair=no
 version=%GFXVer%
