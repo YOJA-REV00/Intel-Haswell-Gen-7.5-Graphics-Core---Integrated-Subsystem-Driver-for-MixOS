@@ -1457,6 +1457,8 @@ DelReg = CUIService.DelReg
 ; Win DT DX11 Capable SKUs with Imola driver
 ;
 [igfx_SoftwareDX11Settings]
+HKR,, KMD_EnableBrightnessInterface, %REG_DWORD%, 1
+HKR,, SmoothBrightness, %REG_DWORD%, 1
 HKR,, SmoothBrightness, %REG_DWORD%, 1
 HKR,, AddAdaptiveBrightnessCaps, %REG_DWORD%, 1
 HKR,, EDP_Adaptive_Brightness_Caps, %REG_DWORD%, 0
@@ -1488,6 +1490,8 @@ HKR,, CBRenderAfterFlip, %REG_DWORD%, 1
 ; DX12 Capable SKUs with Imola driver
 ;
 [igfx_SoftwareDX12Settings]
+HKR,, KMD_EnableBrightnessInterface, %REG_DWORD%, 1
+HKR,, SmoothBrightness, %REG_DWORD%, 1
 HKR,, SmoothBrightness, %REG_DWORD%, 1
 HKR,, AddAdaptiveBrightnessCaps, %REG_DWORD%, 1
 HKR,, EDP_Adaptive_Brightness_Caps, %REG_DWORD%, 0
