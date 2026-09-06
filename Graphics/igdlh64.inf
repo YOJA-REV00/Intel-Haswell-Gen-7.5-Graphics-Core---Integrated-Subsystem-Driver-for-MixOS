@@ -24,7 +24,7 @@ Provider=%Intel%
 ClassGUID={4D36E968-E325-11CE-BFC1-08002BE10318}
 Class=Display
 CatalogFile=igdlh.cat
-DriverVer=09/06/2026,20.19.15.5213
+DriverVer=09/06/2026,20.19.15.5222
 ;
 ; Package Info for Co-Installer
 ;
@@ -1457,6 +1457,33 @@ DelReg = CUIService.DelReg
 ; Win DT DX11 Capable SKUs with Imola driver
 ;
 [igfx_SoftwareDX11Settings]
+HKR,, DisableShaderCacheLimit, %REG_DWORD%, 1
+HKR,, ForceSynchronization, %REG_DWORD%, 0
+HKR,, MaxPreRenderedFrames, %REG_DWORD%, 1
+HKR,, VsyncBufferLevel, %REG_DWORD%, 0
+HKR,, TotalSchedSubmissions, %REG_DWORD%, 256
+HKR,, DisableShaderCacheLimit, %REG_DWORD%, 1
+HKR,, ForceSynchronization, %REG_DWORD%, 0
+HKR,, MaxPreRenderedFrames, %REG_DWORD%, 1
+HKR,, VsyncBufferLevel, %REG_DWORD%, 0
+HKR,, TotalSchedSubmissions, %REG_DWORD%, 256
+HKR,, DisableShaderCacheLimit, %REG_DWORD%, 1
+HKR,, ForceSynchronization, %REG_DWORD%, 0
+HKR,, MaxPreRenderedFrames, %REG_DWORD%, 1
+HKR,, VsyncBufferLevel, %REG_DWORD%, 0
+HKR,, TotalSchedSubmissions, %REG_DWORD%, 256
+HKR,, DisableShaderCacheLimit, %REG_DWORD%, 1
+HKR,, ForceSynchronization, %REG_DWORD%, 0
+HKR,, TotalSchedSubmissions, %REG_DWORD%, 256
+HKR,, TotalSchedSubmissions, %REG_DWORD%, 256
+HKR,, TripleBuffer, %REG_DWORD%, 1
+
+HKR,, TotalSchedSubmissions, %REG_DWORD%, 256
+HKR,, TotalSchedSubmissions, %REG_DWORD%, 256
+
+HKR,, TotalSchedSubmissions, %REG_DWORD%, 512
+
+
 HKR,"Interrupt Management\MessageSignaledInterruptProperties",MSISupported,%REG_DWORD%,1
 HKR,"Interrupt Management\MessageSignaledInterruptProperties",MessageNumberLimit,%REG_DWORD%,1
 HKR,, PowerSavingPolicy, %REG_DWORD%, 0
@@ -1497,6 +1524,11 @@ HKR,, CBRenderAfterFlip, %REG_DWORD%, 1
 ; DX12 Capable SKUs with Imola driver
 ;
 [igfx_SoftwareDX12Settings]
+HKR,, DisableShaderCacheLimit, %REG_DWORD%, 1
+HKR,, ForceSynchronization, %REG_DWORD%, 0
+HKR,, MaxPreRenderedFrames, %REG_DWORD%, 1
+HKR,, VsyncBufferLevel, %REG_DWORD%, 0
+HKR,, TotalSchedSubmissions, %REG_DWORD%, 256
 HKR,, PowerSavingPolicy, %REG_DWORD%, 0
 HKR,, DisableDynamicGating, %REG_DWORD%, 1
 HKR,, TotalSchedSubmissions, %REG_DWORD%, 256
