@@ -1,11 +1,19 @@
+> ### ⚠️ END OF LIFE (EOL) NOTICE
+> This project has officially reached its final stage of development (End of Life). 
+> All stable infrastructure tweaks, MSI interruption mappings, and symmetric API performance constraints have been fully exhausted under the Build v5222 pipeline. No further INF updates, features, or architectural enhancements will be deployed. This release remains preserved as the absolute performance ceiling for Intel HD Graphics 4600 on MixOS & Windows 11.
+
 # Intel-Haswell-Gen-7.5-Graphics-Core---Integrated-Subsystem-Driver-for-Windows-11-&-MixOS-25H2
 little customized inte driver (based on 20.40.5171 / 15.40.5171)
+
+Tested On: Dell Optiplex 3020
+CPU: I5 4590
+RAM: 8gb
 
 📌 Project Overview
 
 This distribution represents the low-level optimization and kernel-space injection of the graphics driver for Intel Haswell (HD Graphics 4600 / Gen 7.5) architectures. It is specifically engineered as a native multimedia component tailored for Windows 11 and MixOS operating systems. The core purpose of this compilation is to bypass the legacy hardware deprecation constraints imposed by the upstream OEM, enabling a high-efficiency hardware deployment within the modern Windows 11 and MixOS environments while maintaining absolute system stability.
 
-🛠️ Architectural Enhancements & Changelog
+🛠️ Some Architectural Enhancements & Changelog
 
 The directive configuration file (igdlh64.inf) and the cryptographic signature database have been restructured to integrate the following optimizations directly into the display driver framework (WDDM 2.0):
 
