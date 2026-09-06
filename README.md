@@ -5,9 +5,9 @@
 # Intel-Haswell-Gen-7.5-Graphics-Core---Integrated-Subsystem-Driver-for-Windows-11-&-MixOS-25H2
 little customized inte driver (based on 20.40.5171 / 15.40.5171)
 
-Tested On: Dell Optiplex 3020
-CPU: I5 4590
-RAM: 8gb
+- Tested On: Dell Optiplex 3020
+- CPU: I5 4590
+- RAM: 8gb
 
 📌 Project Overview
 
